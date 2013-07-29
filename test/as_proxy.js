@@ -12,7 +12,7 @@ var SGIP = require('..')
   , StreamSpliter = require('../lib/StreamSpliter.js').Class
   ;
 
-var sp = new SP('202.99.87.201', 8801, 'dialbook', 'dialbooktest', 8801, '', 'dialbook', 'dialbooktest');
+var sp = new SP('127.0.0.1', 8801, 'dialbook', 'dialbooktest', 8801, '', 'dialbook', 'dialbooktest');
 
 
 sp.on('request', function(req){
@@ -44,4 +44,4 @@ var server = net.createServer(function(extHubSock){
     });
   });
 });
-server.listen(1527);
+server.listen(8802);
